@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pernikahan Wildan & Eka</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-color: #e9d8a6; /* gold/cream tone */
+        --secondary-color: rgba(0, 0, 0, 0.6);
+        --text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        --section-padding: 100px 20px;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        overflow-x: hidden;
+      }
+
+      /* Typography */
+      .font-wedding {
+        font-family: "Playfair Display", serif;
+        color: white;
+        text-shadow: var(--text-shadow);
+      }
+
+      .section-title {
+        font-family: "Playfair Display", serif;
+        font-size: 36px;
+        color: var(--primary-color);
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+      }
+
+      /* Text Animation Classes */
+      .animate-text {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: all 0.6s ease-out;
+      }
+
+      .animate-text.animated {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      .delay-1 {
+        transition-delay: 0.2s;
+      }
+      .delay-2 {
+        transition-delay: 0.4s;
+      }
+      .delay-3 {
+        transition-delay: 0.6s;
+      }
+      .delay-4 {
+        transition-delay: 0.8s;
+      }
+      .delay-5 {
+        transition-delay: 1s;
+      }
+
+      /* Layout Components */
+      .overlay-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -1;
+      }
+
+      .section-container {
+        position: relative;
+        padding: var(--section-padding);
+        z-index: 1;
+        text-align: center;
+      }
+
+      .content-block {
+        background-color: rgba(255, 255, 255, 0.05);
+        padding: 20px;
+        border-radius: 15px;
+        max-width: 500px;
+        margin: 0 auto 30px;
+      }
+
+      /* Video Background */
+      .video-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -2;
+      }
+
+      .video-wrapper video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
+      }
+
+      .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: -1;
+      }
+
+      /* Welcome Screen */
+      #welcome-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        text-align: center;
+      }
+
+      #open-btn {
+        background: white;
+        color: black;
+        border: none;
+        padding: 12px 30px;
+        font-size: 18px;
+        border-radius: 30px;
+        margin-top: 20px;
+        transition: all 0.3s ease;
+      }
+
+      #open-btn:hover {
+        background: #ddd;
+        transform: translateY(-2px);
+      }
+
+      /* Typing Animation */
+      #typed-title {
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 2px solid rgba(255, 255, 255, 0.7);
+        width: fit-content;
+        margin: 0 auto;
+        font-family: "Playfair Display", serif;
+        font-size: 32px;
+        animation: blink 0.8s infinite;
+      }
+
+      @keyframes blink {
+        0%,
+        100% {
+          border-color: transparent;
+        }
+        50% {
+          border-color: rgba(255, 255, 255, 0.7);
+        }
+      }
+
+      /* Banner Carousel */
+      .banner-img {
+        max-height: 800px;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+      }
+
+      .carousel-caption {
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding: 1rem;
+        z-index: 2;
+      }
+
+      .top-caption {
+        top: 10%;
+        bottom: auto;
+        transform: translateY(0);
+      }
+
+      .text-shadow {
+        text-shadow: var(--text-shadow);
+      }
+
+      /* Countdown */
+      #countdown h3 {
+        font-size: 32px;
+        margin: 0;
+      }
+
+      #countdown small {
+        font-size: 14px;
+        color: #ddd;
+      }
+
+      /* Comment Section */
+      .comment-box {
+        background-color: #fff;
+        color: #000;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+
+      .comment-box small {
+        font-size: 12px;
+        color: #666;
+      }
+
+      .comment-box .initials {
+        background: #ccc;
+        color: #000;
+        font-weight: bold;
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px;
+      }
+
+      /* Audio Control */
+      #audio-btn {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        z-index: 5;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      #audio-btn:hover {
+        transform: scale(1.1);
+      }
+
+      #audio-icon {
+        width: 60px;
+        height: 60px;
+        transition: transform 0.3s ease;
+      }
+
+      .spinning {
+        animation: spin 3s linear infinite;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      audio {
+        display: none;
+      }
+
+      /* Responsive Adjustments */
+      @media (max-width: 768px) {
+        :root {
+          --section-padding: 80px 15px;
+        }
+
+        .font-wedding {
+          font-size: 32px;
+        }
+
+        .section-title {
+          font-size: 28px;
+        }
+
+        .banner-img {
+          height: 90vh;
+          object-position: center center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Video Background -->
+    <div class="video-wrapper">
+      <video autoplay muted loop playsinline>
+        <source src="wedding-video.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="overlay"></div>
+
+    <!-- Welcome Screen -->
+    <div id="welcome-screen">
+      <button
+        id="open-btn"
+        class="animate__animated animate__fadeInUp animate__delay-1s"
+      >
+        Buka Undangan
+      </button>
+    </div>
+
+    <!-- Audio -->
+    <audio id="bg-music" loop>
+      <source src="wedding-audio.mp3" type="audio/mp3" />
+    </audio>
+    <button id="audio-btn" title="Toggle Musik">
+      <img src="vinyl.png" alt="Vinyl Icon" id="audio-icon" />
+    </button>
+
+    <!-- Header Section -->
+    <section class="section-container">
+      <div class="container py-5 my-5">
+        <p class="lead animate-text delay-1 mb-4">THE WEDDING OF</p>
+        <h1 class="font-wedding display-3 animate-text delay-2" style="font-size: 60px;">
+          Wildan & Eka
+        </h1>
+        <div class="d-flex justify-content-center pt-5 mt-5">
+          <div
+            class="my-5 bg-white rounded text-dark py-3 px-5 animate-text delay-3"
+            style="opacity: 0.8"
+          >
+            <p class="py-0 my-0">Kepada Yth.</p>
+            <p class="fw-bold py-0 my-0" id="guest-name">Tamu Undangan</p>
+            <p class="py-0 my-0">Ditempat</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banner Carousel -->
+    <section class="section-container p-0">
+      <div
+        id="bannerCarousel"
+        class="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="4000"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#bannerCarousel"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#bannerCarousel"
+            data-bs-slide-to="1"
+          ></button>
+        </div>
+
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="banner-1.jpg"
+              class="d-block w-100 banner-img"
+              alt="Banner 1"
+            />
+            <div class="carousel-caption top-caption">
+              <h2
+                class="fw-bold text-shadow font-wedding animate__animated animate__fadeInDown animate__delay-1s"
+              >
+                Selamat Datang di Pernikahan Kami
+              </h2>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="banner-2.jpg"
+              class="d-block w-100 banner-img"
+              alt="Banner 2"
+            />
+            <div class="carousel-caption top-caption">
+              <h2
+                class="fw-bold text-shadow font-wedding animate__animated animate__fadeInDown animate__delay-1s"
+              >
+                Wildan & Eka
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#bannerCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Sebelumnya</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#bannerCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Berikutnya</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Invitation Section -->
+    <section
+      class="section-container"
+      style="background-color: var(--secondary-color)"
+    >
+      <div class="container">
+        <h3 class="mb-3 font-wedding animate-text" id="typed-title">
+          THE WEDDING OF
+        </h3>
+        <p class="lead animate-text delay-1">
+          Tanpa mengurangi rasa hormat, kami bermaksud mengundang Anda untuk
+          hadir di acara resepsi pernikahan
+        </p>
+
+        <div class="my-4 animate-text delay-2">
+          <img
+            src="holding-hands.jpg"
+            alt="Couple Holding Hands"
+            class="img-fluid rounded shadow"
+            style="max-width: 100%; height: auto"
+          />
+        </div>
+
+        <blockquote
+          class="fs-6 fst-italic mx-auto animate-text delay-3"
+          style="max-width: 700px"
+        >
+          "Dan di antara ayat-ayat-Nya ialah Dia menciptakan untukmu istri-istri
+          dari jenismu sendiri, supaya kamu merasa nyaman kepadanya, dan
+          dijadikan-Nya di antaramu mawadah dan rahmah. Sesungguhnya pada yang
+          demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir"
+        </blockquote>
+        <p class="mt-3 animate-text delay-4">Q.S. Ar-Rum: 21</p>
+      </div>
+    </section>
+
+    <!-- Event Section -->
+    <section
+      class="section-container"
+      style="background-image: url('event-bg.jpg')"
+    >
+      <div class="overlay-bg"></div>
+      <div class="container position-relative">
+        <h2 class="section-title animate-text">EVENT</h2>
+        <p class="mb-4 animate-text delay-1">
+          Kami mengundang Anda untuk hadir dan menjadi bagian dari momen bahagia
+          kami yang akan dilaksanakan pada
+        </p>
+
+        <!-- Akad Nikah -->
+        <div class="content-block animate-text delay-2">
+          <h3 class="fw-bold fst-italic">Akad Nikah</h3>
+          <p class="fw-bold fs-5 mb-1">Sabtu, 6 September 2025</p>
+          <p class="mb-1">Pukul 08.00 WIB</p>
+          <p class="mb-3">Masjid Al-Ikhlas, Bandung</p>
+          <a
+            href="#"
+            class="btn btn-light rounded-pill px-4 py-2 animate__animated animate__pulse animate__infinite"
+            >Lokasi Acara</a
+          >
+        </div>
+
+        <!-- Countdown -->
+        <div
+          class="d-flex justify-content-center gap-3 my-4 flex-wrap animate-text delay-3"
+          id="countdown"
+        >
+          <div>
+            <h3 id="days">0</h3>
+            <small>Days</small>
+          </div>
+          <div>
+            <h3 id="hours">0</h3>
+            <small>Hours</small>
+          </div>
+          <div>
+            <h3 id="minutes">0</h3>
+            <small>Minutes</small>
+          </div>
+          <div>
+            <h3 id="seconds">0</h3>
+            <small>Seconds</small>
+          </div>
+        </div>
+
+        <!-- Resepsi -->
+        <div class="content-block animate-text delay-4">
+          <h3 class="fw-bold fst-italic">Resepsi</h3>
+          <p class="fw-bold fs-5 mb-1">Sabtu, 7 September 2025</p>
+          <p class="mb-1">Pukul 11.00 - 14.00 WIB</p>
+          <p class="mb-3">Gedung Serbaguna Cendana, Bandung</p>
+          <a
+            href="#"
+            class="btn btn-light rounded-pill px-4 py-2 animate__animated animate__pulse animate__infinite"
+            >Lokasi Acara</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Snapshot Section -->
+    <section
+      class="section-container"
+      style="background-image: url('snapshot-bg.jpg')"
+    >
+      <div class="overlay-bg"></div>
+      <div class="container position-relative">
+        <h2 class="section-title animate-text">SNAPSHOT</h2>
+        <p class="mb-4 animate-text delay-1">
+          Aku diciptakan tepat pada waktunya untuk mengisi waktumu, dan aku
+          menggunakan seluruh waktuku dalam hidup ini untuk mencintaimu.
+        </p>
+
+        <!-- Main Photo -->
+        <div class="mb-4 animate-text delay-2">
+          <img
+            src="snapshot-main.jpg"
+            alt="Foto Utama"
+            class="img-fluid rounded shadow-lg"
+          />
+        </div>
+
+        <!-- Gallery -->
+        <div class="row g-2">
+          <div
+            class="col-6 col-md-3 animate-text"
+            style="transition-delay: 0.2s"
+          >
+            <img
+              src="snapshot-1.jpg"
+              class="img-fluid rounded shadow"
+              alt="Galeri 1"
+            />
+          </div>
+          <div
+            class="col-6 col-md-3 animate-text"
+            style="transition-delay: 0.4s"
+          >
+            <img
+              src="snapshot-2.jpg"
+              class="img-fluid rounded shadow"
+              alt="Galeri 2"
+            />
+          </div>
+          <div
+            class="col-6 col-md-3 animate-text"
+            style="transition-delay: 0.6s"
+          >
+            <img
+              src="snapshot-3.jpg"
+              class="img-fluid rounded shadow"
+              alt="Galeri 3"
+            />
+          </div>
+          <div
+            class="col-6 col-md-3 animate-text"
+            style="transition-delay: 0.8s"
+          >
+            <img
+              src="snapshot-4.jpg"
+              class="img-fluid rounded shadow"
+              alt="Galeri 4"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comment Section -->
+    <section
+      class="section-container text-start"
+      style="background-image: url('comment-bg.jpg')"
+    >
+      <div class="overlay-bg"></div>
+      <div class="container position-relative">
+        <h2 class="section-title text-center animate-text">COMMENT</h2>
+
+        <!-- Comment Form -->
+        <form id="comment-form" class="mb-4 animate-text delay-1">
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" id="name" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">E-Mail (Optional)</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="email@domain.com"
+            />
+          </div>
+          <div class="mb-2">
+            <label for="message" class="form-label">Comment</label>
+            <textarea
+              id="message"
+              class="form-control"
+              maxlength="500"
+              rows="3"
+              required
+            ></textarea>
+            <small id="char-count" class="text-muted"
+              >Character left: 500</small
+            >
+          </div>
+          <button
+            type="submit"
+            class="btn btn-light rounded-pill px-4 mt-2 animate__animated animate__pulse"
+          >
+            Send →
+          </button>
+        </form>
+
+        <!-- Comment List -->
+        <div id="comment-list">
+          <!-- Comments will appear here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Gift Section -->
+    <section
+      class="section-container"
+      style="background-image: url('gift-bg.jpg')"
+    >
+      <div class="overlay-bg"></div>
+      <div class="container position-relative">
+        <h2 class="section-title animate-text">GIFTS</h2>
+        <p class="mb-4 animate-text delay-1">
+          Terima kasih telah mengisi kebahagiaan dan kegembiraan di pernikahan
+          kami dengan kehadiran dan hadiah indah Anda.
+        </p>
+
+        <!-- Bank Accounts -->
+        <div
+          class="mb-3 d-flex align-items-center justify-content-center gap-3 flex-wrap animate-text delay-2"
+        >
+          <img src="bank-logo.png" alt="bank Logo" style="height: 40px" />
+          <div>
+            <strong class="d-block">123456789</strong>
+            <small>A/N Mempelai Pria</small>
+          </div>
+        </div>
+
+        <div
+          class="mb-4 d-flex align-items-center justify-content-center gap-3 flex-wrap animate-text delay-3"
+        >
+          <img src="bank-logo.png" alt="bank Logo" style="height: 40px" />
+          <div>
+            <strong class="d-block">123456789</strong>
+            <small>A/N Mempelai Wanita</small>
+          </div>
+        </div>
+
+        <a
+          href="https://wa.me/62xxxxxxxxxxx?text=Halo%2C%20saya%20sudah%20mengirimkan%20hadiah%20pernikahan"
+          target="_blank"
+          class="btn btn-light rounded-pill px-5 animate-text delay-4 animate__animated animate__pulse animate__infinite"
+        >
+          Konfirmasi
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="text-center py-4 animate-text"
+      style="background-color: var(--secondary-color)"
+    >
+      &copy; 2025 Wildan & Eka. Terima kasih atas kehadiran dan doa restunya.
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // DOM Elements
+      const audio = document.getElementById("bg-music");
+      const vinyl = document.getElementById("audio-icon");
+      const openBtn = document.getElementById("open-btn");
+      const welcome = document.getElementById("welcome-screen");
+      const toggleBtn = document.getElementById("audio-btn");
+      const messageInput = document.getElementById("message");
+      const charCount = document.getElementById("char-count");
+      const commentList = document.getElementById("comment-list");
+      const form = document.getElementById("comment-form");
+
+      // Initialize Audio
+      function initAudio() {
+        openBtn.addEventListener("click", () => {
+          audio
+            .play()
+            .then(() => vinyl.classList.add("spinning"))
+            .catch((e) => console.log("Autoplay prevented:", e));
+          welcome.style.display = "none";
+        });
+
+        toggleBtn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          if (audio.paused) {
+            audio.play();
+            vinyl.classList.add("spinning");
+          } else {
+            audio.pause();
+            vinyl.classList.remove("spinning");
+          }
+        });
+      }
+
+      // Set Guest Name from URL
+      function setGuestName() {
+        const getQueryParam = (param) => {
+          const urlParams = new URLSearchParams(window.location.search);
+          return urlParams.get(param);
+        };
+
+        const guestName = getQueryParam("to");
+        if (guestName) {
+          document.getElementById("guest-name").textContent =
+            decodeURIComponent(guestName.replace(/\+/g, " "));
+        }
+      }
+
+      // Typing Effect
+      function initTypingEffect() {
+        const text = "THE WEDDING OF";
+        const target = document.getElementById("typed-title");
+        let i = 0;
+
+        function typeEffect() {
+          if (i < text.length) {
+            target.textContent += text.charAt(i);
+            i++;
+            setTimeout(typeEffect, 100);
+          }
+        }
+
+        window.addEventListener("DOMContentLoaded", () => {
+          target.textContent = "";
+          setTimeout(typeEffect, 500);
+        });
+      }
+
+      // Scroll Animation
+      function initScrollAnimation() {
+        const animateElements = document.querySelectorAll(".animate-text");
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("animated");
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+          }
+        );
+
+        animateElements.forEach((element) => {
+          observer.observe(element);
+        });
+      }
+
+      // Comment Form Handling
+      function initCommentForm() {
+        messageInput.addEventListener("input", () => {
+          const remaining = 500 - messageInput.value.length;
+          charCount.textContent = `Character left: ${remaining}`;
+        });
+
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+
+          const name = document.getElementById("name").value.trim();
+          const email = document.getElementById("email").value.trim();
+          const message = messageInput.value.trim();
+
+          if (!name || !message) return;
+
+          const time = "Baru saja";
+          const initial = name.charAt(0).toUpperCase();
+
+          const commentHTML = `
+          <div class="comment-box d-flex align-items-start animate__animated animate__fadeIn">
+            <div class="initials">${initial}</div>
+            <div>
+              <strong>${name}</strong>
+              <p class="mb-1">${message}</p>
+              <small>${time}</small>
+            </div>
+          </div>
+        `;
+
+          commentList.insertAdjacentHTML("afterbegin", commentHTML);
+          form.reset();
+          charCount.textContent = "Character left: 500";
+        });
+      }
+
+      // Countdown Timer
+      function initCountdown() {
+        const weddingDate = new Date("September 7, 2025 08:00:00").getTime();
+
+        function updateCountdown() {
+          const now = new Date().getTime();
+          const distance = weddingDate - now;
+
+          // Animate countdown numbers
+          document.getElementById("days").textContent = Math.floor(
+            distance / (1000 * 60 * 60 * 24)
+          );
+          document.getElementById("hours").textContent = Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          document.getElementById("minutes").textContent = Math.floor(
+            (distance % (1000 * 60 * 60)) / (1000 * 60)
+          );
+          document.getElementById("seconds").textContent = Math.floor(
+            (distance % (1000 * 60)) / 1000
+          );
+        }
+
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+      }
+
+      // Initialize all functions
+      document.addEventListener("DOMContentLoaded", () => {
+        initAudio();
+        setGuestName();
+        initTypingEffect();
+        initScrollAnimation();
+        initCommentForm();
+        initCountdown();
+      });
+    </script>
+  </body>
+</html>
