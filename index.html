@@ -278,6 +278,89 @@
         display: none;
       }
 
+      /* Hamburger Menu */
+      .hamburger-menu {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 1000;
+        cursor: pointer;
+        background: rgba(0, 0, 0, 0.7);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease;
+      }
+
+      .hamburger-menu:hover {
+        background: rgba(0, 0, 0, 0.9);
+      }
+
+      .hamburger-menu span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: white;
+        margin: 2.5px 0;
+        transition: all 0.3s ease;
+      }
+
+      .hamburger-menu.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+      }
+
+      .hamburger-menu.active span:nth-child(2) {
+        opacity: 0;
+      }
+
+      .hamburger-menu.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+      }
+
+      .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 250px;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 999;
+        transition: all 0.3s ease;
+        padding-top: 80px;
+      }
+
+      .nav-menu.active {
+        right: 0;
+      }
+
+      .nav-menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      .nav-menu li {
+        padding: 15px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .nav-menu a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        transition: all 0.3s ease;
+        display: block;
+      }
+
+      .nav-menu a:hover {
+        color: var(--primary-color);
+        padding-left: 10px;
+      }
+
       /* Responsive Adjustments */
       @media (max-width: 768px) {
         :root {
@@ -309,6 +392,25 @@
     </style>
   </head>
   <body>
+    <!-- Hamburger Menu -->
+    <div class="hamburger-menu" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu" id="navMenu">
+      <ul>
+        <li><a href="#bannerCarousel">Home</a></li>
+        <li><a href="#invitation">Invitation</a></li>
+        <li><a href="#event">Event</a></li>
+        <li><a href="#snapshot">Snapshot</a></li>
+        <li><a href="#comment">Comment</a></li>
+        <li><a href="#gift">Gifts</a></li>
+      </ul>
+    </nav>
+
     <!-- Video Background -->
     <div class="video-wrapper">
       <video autoplay muted loop playsinline>
@@ -360,7 +462,7 @@
     </section>
 
     <!-- Banner Carousel -->
-    <section class="section-container p-0">
+    <section class="section-container p-0" id="bannerCarousel">
       <div
         id="bannerCarousel"
         class="carousel slide"
@@ -389,11 +491,7 @@
               alt="Banner 1"
             />
             <div class="carousel-caption top-caption">
-              <h2
-                class="text-shadow font-wedding"
-              >
-                Welcome to Our Wedding
-              </h2>
+              <h2 class="text-shadow font-wedding">Welcome to Our Wedding</h2>
             </div>
           </div>
           <div class="carousel-item">
@@ -403,11 +501,7 @@
               alt="Banner 2"
             />
             <div class="carousel-caption top-caption">
-              <h2
-                class="text-shadow font-wedding"
-              >
-                Wildan & Eka
-              </h2>
+              <h2 class="text-shadow font-wedding">Wildan & Eka</h2>
             </div>
           </div>
         </div>
@@ -437,6 +531,7 @@
     <section
       class="section-container"
       style="background-color: var(--secondary-color)"
+      id="invitation"
     >
       <div class="container">
         <h3 class="mb-3 font-wedding animate-text" id="typed-title">
@@ -476,6 +571,7 @@
         background-image: url('assets/photo-4.JPG');
         background-size: cover;
       "
+      id="event"
     >
       <div class="overlay-bg"></div>
       <div class="container position-relative">
@@ -547,6 +643,7 @@
     <section
       class="section-container"
       style="background-image: url('snapshot-bg.JPG'); background-size: cover"
+      id="snapshot"
     >
       <div class="overlay-bg"></div>
       <div class="container position-relative">
@@ -618,6 +715,7 @@
         background-image: url('assets/photo-12.JPG');
         background-size: cover;
       "
+      id="comment"
     >
       <div class="overlay-bg"></div>
       <div class="container position-relative">
@@ -675,6 +773,7 @@
     <section
       class="section-container"
       style="background-image: url('gift-bg.JPG')"
+      id="gift"
     >
       <div class="overlay-bg"></div>
       <div class="container position-relative">
@@ -766,6 +865,8 @@
       const charCount = document.getElementById("char-count");
       const commentList = document.getElementById("comment-list");
       const form = document.getElementById("comment-form");
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("navMenu");
 
       // Initialize Audio
       function initAudio() {
@@ -785,6 +886,23 @@
             audio.pause();
             vinyl.classList.remove("spinning");
           }
+        });
+      }
+
+      // Hamburger Menu Toggle
+      function initHamburgerMenu() {
+        hamburger.addEventListener("click", () => {
+          hamburger.classList.toggle("active");
+          navMenu.classList.toggle("active");
+        });
+
+        // Close menu when clicking on a link
+        const navLinks = document.querySelectorAll(".nav-menu a");
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+          });
         });
       }
 
@@ -910,6 +1028,7 @@
       // Initialize all functions
       document.addEventListener("DOMContentLoaded", () => {
         initAudio();
+        initHamburgerMenu();
         setGuestName();
         initTypingEffect();
         initScrollAnimation();
