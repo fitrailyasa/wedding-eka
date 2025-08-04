@@ -16,6 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <style>
       :root {
         --primary-color: #e9d8a6; /* gold/cream tone */
@@ -305,6 +312,15 @@
           height: 90vh;
           object-position: center center;
         }
+      }
+
+      .copy-number {
+        cursor: pointer;
+        transition: color 0.2s;
+      }
+
+      .copy-number:hover {
+        color: #007bff; /* biru saat hover */
       }
     </style>
   </head>
@@ -685,20 +701,40 @@
         <div
           class="mb-3 d-flex align-items-center justify-content-center gap-3 flex-wrap animate-text delay-2"
         >
-          <img src="bank-logo.png" alt="bank Logo" style="height: 40px" />
+          <img
+            src="assets/bca.png"
+            alt="bank Logo"
+            style="height: 50px; background-color: #fff; border-radius: 20px"
+          />
           <div>
-            <strong class="d-block">123456789</strong>
-            <small>A/N Mempelai Pria</small>
+            <strong
+              id="bca-number"
+              class="d-block copy-number"
+              onclick="copyText('bca-number')"
+            >
+              <i class="fa fa-copy"></i> 7772922801
+            </strong>
+            <small>A/N Eka Anggraini</small>
           </div>
         </div>
 
         <div
           class="mb-4 d-flex align-items-center justify-content-center gap-3 flex-wrap animate-text delay-3"
         >
-          <img src="bank-logo.png" alt="bank Logo" style="height: 40px" />
+          <img
+            src="assets/mandiri.png"
+            alt="bank Logo"
+            style="height: 60px; background-color: #fff; border-radius: 20px"
+          />
           <div>
-            <strong class="d-block">123456789</strong>
-            <small>A/N Mempelai Wanita</small>
+            <strong
+              id="mandiri-number"
+              class="d-block copy-number"
+              onclick="copyText('mandiri-number')"
+            >
+              <i class="fa fa-copy"></i> 1130011343906
+            </strong>
+            <small>A/N Eka Anggraini</small>
           </div>
         </div>
 
@@ -722,6 +758,25 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function copyText(elementId) {
+        const text = document.getElementById(elementId).innerText;
+        navigator.clipboard
+          .writeText(text)
+          .then(() => {
+            // Ubah teks sementara untuk memberi tanda sukses
+            const el = document.getElementById(elementId);
+            const original = el.innerText;
+            el.innerText = "✅ Disalin";
+            setTimeout(() => {
+              el.innerText = original;
+            }, 1500);
+          })
+          .catch((err) => {
+            console.error("Gagal menyalin: ", err);
+          });
+      }
+    </script>
     <script>
       // DOM Elements
       const audio = document.getElementById("bg-music");
