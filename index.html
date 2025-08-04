@@ -137,23 +137,6 @@
         z-index: -1;
       }
 
-      /* Welcome Screen */
-      #welcome-screen {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background: rgba(0, 0, 0, 0.6);
-        z-index: 10;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        color: white;
-        text-align: center;
-      }
-
       #open-btn {
         background: white;
         color: black;
@@ -333,11 +316,6 @@
       </video>
     </div>
     <div class="overlay"></div>
-
-    <!-- Welcome Screen -->
-    <!-- <div id="welcome-screen">
-      
-    </div> -->
 
     <!-- Audio -->
     <audio id="bg-music" loop>
@@ -783,7 +761,6 @@
       const audio = document.getElementById("bg-music");
       const vinyl = document.getElementById("audio-icon");
       const openBtn = document.getElementById("open-btn");
-      const welcome = document.getElementById("welcome-screen");
       const toggleBtn = document.getElementById("audio-btn");
       const messageInput = document.getElementById("message");
       const charCount = document.getElementById("char-count");
@@ -797,7 +774,6 @@
             .play()
             .then(() => vinyl.classList.add("spinning"))
             .catch((e) => console.log("Autoplay prevented:", e));
-          welcome.style.display = "none";
         });
 
         toggleBtn.addEventListener("click", (e) => {
