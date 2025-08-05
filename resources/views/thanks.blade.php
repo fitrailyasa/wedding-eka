@@ -11,7 +11,7 @@
             Yusmin & Eva Gustina <br>
             Rasudin (Alm) & Nahari Isminova <br>
         </p>
-        <p>The Wedding Of</p>
+        <p style="margin-top: 350px;">The Wedding Of</p>
         <h4 class="fw-bold animate-text delay-6">
             Eka & Wildan<br>
         </h4>
