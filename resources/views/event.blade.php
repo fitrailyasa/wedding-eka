@@ -14,7 +14,7 @@
             <p class="fw-bold fs-5 mb-1">Sabtu, 6 September 2025</p>
             <p class="mb-1">Pukul 08:00 WIB s/d Selesai</p>
             <p class="mb-3">
-                Kediaman mempelai wanita<br />Jln. Let. H Nur Nur no. 122 LK. VI,
+                Kediaman mempelai wanita<br />Jln. Let. H Nur no. 122 LK. VI,
                 Simpang PLN, Kec. Sekayu
             </p>
             <a href="https://maps.app.goo.gl/k6rQ7iwmXqKBtuFk8?g_st=ipc" target="_blank"
