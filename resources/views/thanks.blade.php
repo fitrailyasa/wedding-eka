@@ -1,7 +1,7 @@
 <section class="section-container text-center py-5"
     style="
         background-image: url('{{ asset('') }}assets/photo (24).JPG');
-        background-size: cover;
+        background-size: cover; background-position: center;
       "
     id="thanks">
     <div class="container text-shadow">
