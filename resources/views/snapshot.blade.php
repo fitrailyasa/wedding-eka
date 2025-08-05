@@ -27,17 +27,17 @@
             <div class="col-4 col-md-4 animate-text" style="transition-delay: 1s">
                 <img src="{{ asset('') }}assets/photo (14).JPG" class="img-fluid rounded shadow" alt="Galeri 5" />
             </div>
-            <div class="col-4 col-md-4 animate-text" style="transition-delay: 1.2s">
-                <img src="{{ asset('') }}assets/photo (15).JPG" class="img-fluid rounded shadow" alt="Galeri 6" />
-            </div>
             <div class="col-4 col-md-4 animate-text" style="transition-delay: 1.4s">
                 <img src="{{ asset('') }}assets/photo (20).JPG" class="img-fluid rounded shadow" alt="Galeri 7" />
             </div>
-            <div class="col-4 col-md-4 animate-text" style="transition-delay: 1.6s">
-                <img src="{{ asset('') }}assets/photo (21).JPG" class="img-fluid rounded shadow" alt="Galeri 8" />
+            <div class="col-4 col-md-4 animate-text" style="transition-delay: 1.2s">
+                <img src="{{ asset('') }}assets/photo (15).JPG" class="img-fluid rounded shadow" alt="Galeri 6" />
             </div>
             <div class="col-4 col-md-4 animate-text" style="transition-delay: 1.8s">
                 <img src="{{ asset('') }}assets/photo (22).JPG" class="img-fluid rounded shadow" alt="Galeri 9" />
+            </div>
+            <div class="col-4 col-md-4 animate-text" style="transition-delay: 1.6s">
+                <img src="{{ asset('') }}assets/photo (21).JPG" class="img-fluid rounded shadow" alt="Galeri 8" />
             </div>
             <div class="col-4 col-md-4 animate-text" style="transition-delay: 2s">
                 <img src="{{ asset('') }}assets/photo (23).JPG" class="img-fluid rounded shadow" alt="Galeri 10" />
