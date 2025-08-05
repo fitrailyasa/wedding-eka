@@ -419,10 +419,10 @@
 
     <!-- Audio -->
     <audio id="bg-music" loop>
-        <source src="{{ asset('/') }}assets/wedding-audio.mp3" type="audio/mp3" />
+        <source src="{{ asset('') }}assets/wedding-audio.mp3" type="audio/mp3" />
     </audio>
     <button id="audio-btn" title="Toggle Musik">
-        <img src="{{ asset('/') }}assets/vinyl.png" alt="Vinyl Icon" id="audio-icon" />
+        <img src="{{ asset('') }}assets/vinyl.png" alt="Vinyl Icon" id="audio-icon" />
     </button>
 
     <!-- Header Section -->
@@ -460,7 +460,7 @@
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="{{ asset('/') }}assets/photo (1).JPG" class="d-block w-100 banner-img"
+                    <img src="{{ asset('') }}assets/photo (1).JPG" class="d-block w-100 banner-img"
                         alt="Banner 1" />
                     <div class="carousel-caption top-caption">
                         <h2 class="text-shadow font-wedding">
@@ -470,7 +470,7 @@
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ asset('/') }}assets/photo (2).JPG" class="d-block w-100 banner-img"
+                    <img src="{{ asset('') }}assets/photo (2).JPG" class="d-block w-100 banner-img"
                         alt="Banner 2" />
                     <div class="carousel-caption top-caption">
                         <h2 class="text-shadow font-wedding">#WEddingparty</h2>
@@ -517,7 +517,7 @@
             </div>
 
             <div class="my-4 animate-text delay-2">
-                <img src="{{ asset('/') }}assets/photo (3).JPG" alt="Couple Holding Hands"
+                <img src="{{ asset('') }}assets/photo (3).JPG" alt="Couple Holding Hands"
                     class="img-fluid rounded shadow" style="max-width: 100%; height: auto" />
             </div>
 
@@ -534,7 +534,7 @@
     <!-- Event Section -->
     <section class="section-container"
         style="
-        background-image: url('{{ asset('/') }}assets/photo (4).JPG');
+        background-image: url('{{ asset('') }}assets/photo (4).JPG');
         background-size: cover;
       "
         id="event">
@@ -581,90 +581,90 @@
 
             <!-- Main Photo -->
             <div class="mb-4 animate-text delay-2">
-                <img src="{{ asset('/') }}assets/photo (5).JPG" alt="Foto Utama"
+                <img src="{{ asset('') }}assets/photo (5).JPG" alt="Foto Utama"
                     class="img-fluid rounded shadow-lg" />
             </div>
 
             <!-- Gallery -->
             <div class="row g-2">
                 <div class="col-4 col-md-4 animate-text" style="transition-delay: 0.2s">
-                    <img src="{{ asset('/') }}assets/photo (6).JPG" class="img-fluid rounded shadow"
+                    <img src="{{ asset('') }}assets/photo (6).JPG" class="img-fluid rounded shadow"
                         alt="Galeri 1" />
                 </div>
                 <div class="col-8 col-md-8 animate-text" style="transition-delay: 0.4s">
-                    <img src="{{ asset('/') }}assets/photo (8).JPG" class="img-fluid rounded shadow"
+                    <img src="{{ asset('') }}assets/photo (8).JPG" class="img-fluid rounded shadow"
                         alt="Galeri 2" />
                 </div>
                 <div class="col-6 col-md-6 animate-text" style="transition-delay: 0.6s">
-                    <img src="{{ asset('/') }}assets/photo (9).JPG" class="img-fluid rounded shadow"
+                    <img src="{{ asset('') }}assets/photo (9).JPG" class="img-fluid rounded shadow"
                         alt="Galeri 3" />
                 </div>
                 <div class="col-6 col-md-6 animate-text" style="transition-delay: 0.8s">
-                    <img src="{{ asset('/') }}assets/photo (13).JPG" class="img-fluid rounded shadow"
+                    <img src="{{ asset('') }}assets/photo (13).JPG" class="img-fluid rounded shadow"
                         alt="Galeri 4" />
                 </div>
                 <div class="col-4 col-md-4 animate-text" style="transition-delay: 1s">
-                    <img src="{{ asset('/') }}assets/photo (14).JPG" class="img-fluid rounded shadow"
+                    <img src="{{ asset('') }}assets/photo (14).JPG" class="img-fluid rounded shadow"
                         alt="Galeri 5" />
                 </div>
                 <div class="col-4 col-md-4 animate-text" style="transition-delay: 1.2s">
-                    <img src="{{ asset('/') }}assets/photo (15).JPG" class="img-fluid rounded shadow"
+                    <img src="{{ asset('') }}assets/photo (15).JPG" class="img-fluid rounded shadow"
                         alt="Galeri 6" />
                 </div>
                 <div class="col-4 col-md-4 animate-text" style="transition-delay: 1.4s">
-                    <img src="{{ asset('/') }}assets/photo (20).JPG" class="img-fluid rounded shadow"
+                    <img src="{{ asset('') }}assets/photo (20).JPG" class="img-fluid rounded shadow"
                         alt="Galeri 7" />
                 </div>
                 <div class="col-4 col-md-4 animate-text" style="transition-delay: 1.6s">
-                    <img src="{{ asset('/') }}assets/photo (21).JPG" class="img-fluid rounded shadow"
+                    <img src="{{ asset('') }}assets/photo (21).JPG" class="img-fluid rounded shadow"
                         alt="Galeri 8" />
                 </div>
                 <div class="col-4 col-md-4 animate-text" style="transition-delay: 1.8s">
-                    <img src="{{ asset('/') }}assets/photo (22).JPG" class="img-fluid rounded shadow"
+                    <img src="{{ asset('') }}assets/photo (22).JPG" class="img-fluid rounded shadow"
                         alt="Galeri 9" />
                 </div>
                 <div class="col-4 col-md-4 animate-text" style="transition-delay: 2s">
-                    <img src="{{ asset('/') }}assets/photo (23).JPG" class="img-fluid rounded shadow"
+                    <img src="{{ asset('') }}assets/photo (23).JPG" class="img-fluid rounded shadow"
                         alt="Galeri 10" />
                 </div>
                 <div class="col-4 col-md-4 animate-text" style="transition-delay: 2.2s">
-                    <img src="{{ asset('/') }}assets/photo (24).JPG" class="img-fluid rounded shadow"
+                    <img src="{{ asset('') }}assets/photo (24).JPG" class="img-fluid rounded shadow"
                         alt="Galeri 11" />
                 </div>
                 <div class="col-8 col-md-8 animate-text" style="transition-delay: 2.4s">
-                    <img src="{{ asset('/') }}assets/photo (26).JPG" class="img-fluid rounded shadow"
+                    <img src="{{ asset('') }}assets/photo (26).JPG" class="img-fluid rounded shadow"
                         alt="Galeri 12" />
                 </div>
                 <div class="col-4 col-md-4 animate-text" style="transition-delay: 2.6s">
-                    <img src="{{ asset('/') }}assets/photo (27).JPG" class="img-fluid rounded shadow"
+                    <img src="{{ asset('') }}assets/photo (27).JPG" class="img-fluid rounded shadow"
                         alt="Galeri 13" />
                 </div>
                 <div class="col-4 col-md-4 animate-text" style="transition-delay: 2.8s">
-                    <img src="{{ asset('/') }}assets/photo (29).JPG" class="img-fluid rounded shadow"
+                    <img src="{{ asset('') }}assets/photo (29).JPG" class="img-fluid rounded shadow"
                         alt="Galeri 14" />
                 </div>
                 <div class="col-4 col-md-4 animate-text" style="transition-delay: 3s">
-                    <img src="{{ asset('/') }}assets/photo (30).JPG" class="img-fluid rounded shadow"
+                    <img src="{{ asset('') }}assets/photo (30).JPG" class="img-fluid rounded shadow"
                         alt="Galeri 15" />
                 </div>
                 <div class="col-6 col-md-6 animate-text" style="transition-delay: 3.2s">
-                    <img src="{{ asset('/') }}assets/photo (31).JPG" class="img-fluid rounded shadow"
+                    <img src="{{ asset('') }}assets/photo (31).JPG" class="img-fluid rounded shadow"
                         alt="Galeri 16" />
                 </div>
                 <div class="col-6 col-md-6 animate-text" style="transition-delay: 3.4s">
-                    <img src="{{ asset('/') }}assets/photo (32).JPG" class="img-fluid rounded shadow"
+                    <img src="{{ asset('') }}assets/photo (32).JPG" class="img-fluid rounded shadow"
                         alt="Galeri 17" />
                 </div>
                 <div class="col-4 col-md-4 animate-text" style="transition-delay: 3.6s">
-                    <img src="{{ asset('/') }}assets/photo (33).JPG" class="img-fluid rounded shadow"
+                    <img src="{{ asset('') }}assets/photo (33).JPG" class="img-fluid rounded shadow"
                         alt="Galeri 18" />
                 </div>
                 <div class="col-4 col-md-4 animate-text" style="transition-delay: 3.8s">
-                    <img src="{{ asset('/') }}assets/photo (35).JPG" class="img-fluid rounded shadow"
+                    <img src="{{ asset('') }}assets/photo (35).JPG" class="img-fluid rounded shadow"
                         alt="Galeri 19" />
                 </div>
                 <div class="col-4 col-md-4 animate-text" style="transition-delay: 4s">
-                    <img src="{{ asset('/') }}assets/photo (36).JPG" class="img-fluid rounded shadow"
+                    <img src="{{ asset('') }}assets/photo (36).JPG" class="img-fluid rounded shadow"
                         alt="Galeri 20" />
                 </div>
             </div>
@@ -674,7 +674,7 @@
     <!-- Comment Section -->
     <section class="section-container text-start"
         style="
-        background-image: url('{{ asset('/') }}assets/photo (12).JPG');
+        background-image: url('{{ asset('') }}assets/photo (12).JPG');
         background-size: cover;
       "
         id="comment">
@@ -724,7 +724,7 @@
             <div class="d-flex align-items-center justify-content-center">
                 <div
                     class="mb-3 d-flex align-items-center justify-content-center gap-3 flex-wrap animate-text delay-2 p-2">
-                    <img src="{{ asset('/') }}assets/bca.png" alt="bank Logo"
+                    <img src="{{ asset('') }}assets/bca.png" alt="bank Logo"
                         style="height: 50px; background-color: #fff; border-radius: 20px" />
                     <div>
                         <strong id="bca-number" class="d-block copy-number" onclick="copyText('bca-number')">
@@ -736,7 +736,7 @@
 
                 <div
                     class="mb-4 d-flex align-items-center justify-content-center gap-3 flex-wrap animate-text delay-3 p-2">
-                    <img src="{{ asset('/') }}assets/mandiri.png" alt="bank Logo"
+                    <img src="{{ asset('') }}assets/mandiri.png" alt="bank Logo"
                         style="height: 60px; background-color: #fff; border-radius: 20px" />
                     <div>
                         <strong id="mandiri-number" class="d-block copy-number" onclick="copyText('mandiri-number')">
