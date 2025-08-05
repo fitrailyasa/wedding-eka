@@ -17,7 +17,7 @@
                 Kediaman mempelai wanita<br />Jln. Let. H Nur Nur no. 122 LK. VI,
                 Simpang PLN, Kec. Sekayu
             </p>
-            <a href="https://maps.app.goo.gl/UxJo7q1qzcS2evE77?g_st=ipc" target="_blank"
+            <a href="https://maps.app.goo.gl/k6rQ7iwmXqKBtuFk8?g_st=ipc" target="_blank"
                 class="btn btn-light rounded-pill px-4 py-2 animate__animated animate__pulse animate__infinite">Lokasi
                 Acara</a>
         </div>
