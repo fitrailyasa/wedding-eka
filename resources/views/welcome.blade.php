@@ -412,7 +412,7 @@
     <!-- Video Background -->
     <div class="video-wrapper">
         <video autoplay muted loop playsinline>
-            <source src="{{ asset('/') }}assets/wedding-video.mp4" type="video/mp4" />
+            <source src="{{ asset('') }}assets/wedding-video.mp4" type="video/mp4" />
         </video>
     </div>
     <div class="overlay"></div>
