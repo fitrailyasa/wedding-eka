@@ -403,10 +403,10 @@
     <nav class="nav-menu" id="navMenu">
       <ul>
         <li><a href="#bannerCarousel">Home</a></li>
-        <li><a href="#invitation">Invitation</a></li>
-        <li><a href="#event">Event</a></li>
-        <li><a href="#snapshot">Snapshot</a></li>
-        <li><a href="#comment">Comment</a></li>
+        <li><a href="#invitation">Countdown</a></li>
+        <li><a href="#event">Save the Date</a></li>
+        <li><a href="#snapshot">Our Momments</a></li>
+        <li><a href="#comment">Wedding Wish</a></li>
         <li><a href="#gift">Gifts</a></li>
       </ul>
     </nav>
@@ -437,9 +437,9 @@
           class="font-wedding display-3 animate-text delay-2"
           style="font-size: 60px"
         >
-          Wildan & Eka
+          Wildan<br />&<br />Eka
         </h1>
-        <div style="margin-top: 100px;">
+        <div style="margin-top: 100px">
           <a
             href="#bannerCarousel"
             id="open-btn"
@@ -449,8 +449,7 @@
           </a>
         </div>
         <div class="d-flex justify-content-center pb-5">
-          <div
-            class="my-5 rounded py-3 px-5 animate-text delay-3">
+          <div class="my-5 rounded py-3 px-5 animate-text delay-3">
             <p class="py-0 my-0">Kepada Yth.</p>
             <p class="fw-bold py-0 my-0" id="guest-name">Tamu Undangan</p>
             <p class="py-0 my-0">Ditempat</p>
@@ -489,7 +488,9 @@
               alt="Banner 1"
             />
             <div class="carousel-caption top-caption">
-              <h2 class="text-shadow font-wedding">Welcome to Our Wedding</h2>
+              <h2 class="text-shadow font-wedding">
+                The Wedding of Wildan & Eka
+              </h2>
             </div>
           </div>
           <div class="carousel-item">
@@ -499,7 +500,7 @@
               alt="Banner 2"
             />
             <div class="carousel-caption top-caption">
-              <h2 class="text-shadow font-wedding">Wildan & Eka</h2>
+              <h2 class="text-shadow font-wedding">#WEddingparty</h2>
             </div>
           </div>
         </div>
@@ -533,12 +534,31 @@
     >
       <div class="container">
         <h3 class="mb-3 font-wedding animate-text" id="typed-title">
-          THE WEDDING OF
+          Countdown To Our History
         </h3>
-        <p class="lead animate-text delay-1">
-          Tanpa mengurangi rasa hormat, kami bermaksud mengundang Anda untuk
-          hadir di acara resepsi pernikahan
-        </p>
+
+        <!-- Countdown -->
+        <div
+          class="d-flex justify-content-center gap-3 my-4 flex-wrap animate-text delay-3"
+          id="countdown"
+        >
+          <div>
+            <h3 id="days">0</h3>
+            <small>Days</small>
+          </div>
+          <div>
+            <h3 id="hours">0</h3>
+            <small>Hours</small>
+          </div>
+          <div>
+            <h3 id="minutes">0</h3>
+            <small>Minutes</small>
+          </div>
+          <div>
+            <h3 id="seconds">0</h3>
+            <small>Seconds</small>
+          </div>
+        </div>
 
         <div class="my-4 animate-text delay-2">
           <img
@@ -573,11 +593,7 @@
     >
       <div class="overlay-bg"></div>
       <div class="container position-relative">
-        <h2 class="section-title animate-text">EVENT</h2>
-        <p class="mb-4 animate-text delay-1">
-          Kami mengundang Anda untuk hadir dan menjadi bagian dari momen bahagia
-          kami yang akan dilaksanakan pada
-        </p>
+        <h2 class="section-title animate-text">Save The Date</h2>
 
         <!-- Akad Nikah -->
         <div class="content-block animate-text delay-2">
@@ -585,8 +601,8 @@
           <p class="fw-bold fs-5 mb-1">Sabtu, 6 September 2025</p>
           <p class="mb-1">Pukul 08:00 WIB s/d Selesai</p>
           <p class="mb-3">
-            Kediaman Mempelai Wanita - Jl. Let. H. Nur no. 122 LK. VI, Simpang
-            PLN, Kec. Sekayu
+            Kediaman mempelai wanita<br />Jln. Let. H Nur Nur no. 122 LK. VI,
+            Simpang PLN, Kec. Sekayu
           </p>
           <a
             href="https://maps.app.goo.gl/UxJo7q1qzcS2evE77?g_st=ipc"
@@ -594,29 +610,6 @@
             class="btn btn-light rounded-pill px-4 py-2 animate__animated animate__pulse animate__infinite"
             >Lokasi Acara</a
           >
-        </div>
-
-        <!-- Countdown -->
-        <div
-          class="d-flex justify-content-center gap-3 my-4 flex-wrap animate-text delay-3"
-          id="countdown"
-        >
-          <div>
-            <h3 id="days">0</h3>
-            <small>Days</small>
-          </div>
-          <div>
-            <h3 id="hours">0</h3>
-            <small>Hours</small>
-          </div>
-          <div>
-            <h3 id="minutes">0</h3>
-            <small>Minutes</small>
-          </div>
-          <div>
-            <h3 id="seconds">0</h3>
-            <small>Seconds</small>
-          </div>
         </div>
 
         <!-- Resepsi -->
@@ -645,11 +638,7 @@
     >
       <div class="overlay-bg"></div>
       <div class="container position-relative">
-        <h2 class="section-title animate-text">SNAPSHOT</h2>
-        <p class="mb-4 animate-text delay-1">
-          Aku diciptakan tepat pada waktunya untuk mengisi waktumu, dan aku
-          menggunakan seluruh waktuku dalam hidup ini untuk mencintaimu.
-        </p>
+        <h2 class="section-title animate-text">A glimpse of Our moments</h2>
 
         <!-- Main Photo -->
         <div class="mb-4 animate-text delay-2">
@@ -717,46 +706,38 @@
     >
       <div class="overlay-bg"></div>
       <div class="container position-relative">
-        <h2 class="section-title text-center animate-text">COMMENT</h2>
+        <h2 class="section-title text-center animate-text">Wedding Wish</h2>
+        <p class="text-center">It is an honor and pleasure for us, if you can attend and give us your blessing</p>
 
         <!-- Comment Form -->
         <form id="comment-form" class="mb-4 animate-text delay-1">
           <div class="mb-3">
-            <label for="name" class="form-label">Nama</label>
+            <label for="name" class="form-label">Name</label>
             <input
               type="text"
               id="name"
               class="form-control"
-              placeholder="Masukan nama..."
+              placeholder="Input name..."
               required
             />
           </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">E-Mail (Opsional)</label>
-            <input
-              type="email"
-              id="email"
-              class="form-control"
-              placeholder="name@gmail.com"
-            />
-          </div>
           <div class="mb-2">
-            <label for="message" class="form-label">Pesan</label>
+            <label for="message" class="form-label">Wish</label>
             <textarea
               id="message"
               class="form-control"
               maxlength="500"
               rows="3"
               required
-              placeholder="Masukan pesan disini..."
+              placeholder="Input wish..."
             ></textarea>
-            <small id="char-count" class="small">maks: 500 karakter</small>
+            <small id="char-count" class="small">max: 500 character</small>
           </div>
           <button
             type="submit"
             class="btn btn-light rounded-pill px-4 mt-2 animate__animated animate__pulse"
           >
-            Kirim →
+            Send →
           </button>
         </form>
 
@@ -920,7 +901,7 @@
 
       // Typing Effect
       function initTypingEffect() {
-        const text = "THE WEDDING OF";
+        const text = "Countdown To Our History";
         const target = document.getElementById("typed-title");
         let i = 0;
 
