@@ -71,6 +71,9 @@
     <!-- Gift Section -->
     @include('gift')
 
+    <!-- Thanks Section -->
+    @include('thanks')
+
     <!-- Scripts -->
     @include('script')
 </body>
