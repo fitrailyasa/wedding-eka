@@ -1,6 +1,6 @@
 <section class="section-container" style="background-color: var(--secondary-color)" id="invitation">
     <div class="container">
-        <h3 class="mb-3 font-wedding animate-text" id="typed-title">
+        <h3 class="mb-3 font-wedding animate-text" id="">
             Countdown to<br />Our History
         </h3>
 
