@@ -27,6 +27,7 @@
         <ul>
             <li><a href="#bannerCarousel">Home</a></li>
             <li><a href="#invitation">Countdown</a></li>
+            <li><a href="#biodata">Eka & Wildan</a></li>
             <li><a href="#event">Save the Date</a></li>
             <li><a href="#snapshot">Our Momments</a></li>
             <li><a href="#comment">Wedding Wish</a></li>
@@ -58,6 +59,9 @@
 
     <!-- Invitation Section -->
     @include('invitation')
+
+    <!-- Biodata Section -->
+    @include('biodata')
 
     <!-- Event Section -->
     @include('event')
