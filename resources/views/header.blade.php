@@ -16,7 +16,7 @@
             <div class="my-5 rounded py-3 px-5 animate-text delay-3">
                 <p class="py-0 my-0">Dear:</p>
                 <p class="fw-bold py-0 my-0" id="guest-name">Guest</p>
-                <p class="py-0 my-0">You are cordially invited<br>to our wedding</p>
+                <p class="py-0 my-0">You're invited to our wedding</p>
             </div>
         </div>
     </div>
