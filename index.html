@@ -906,13 +906,17 @@
 
       // Typing Effect
       function initTypingEffect() {
-        const text = "Countdown To Our History";
+        const text = "Countdown To\nOur History";
         const target = document.getElementById("typed-title");
         let i = 0;
 
         function typeEffect() {
           if (i < text.length) {
-            target.textContent += text.charAt(i);
+            if (text.charAt(i) === "\n") {
+        target.innerHTML += "<br>";
+      } else {
+        target.innerHTML += text.charAt(i);
+      }
             i++;
             setTimeout(typeEffect, 100);
           }
