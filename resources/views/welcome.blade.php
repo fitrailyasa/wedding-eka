@@ -47,7 +47,7 @@
         <source src="{{ asset('') }}assets/wedding-audio-2.mp3" type="audio/mp3" />
     </audio>
     <button id="audio-btn" title="Toggle Musik">
-        <img src="{{ asset('') }}assets/vinyl.png" alt="Vinyl Icon" id="audio-icon" />
+        <img src="{{ asset('') }}assets/disc.png" alt="Vinyl Icon" id="audio-icon" />
     </button>
 
     <!-- Header Section -->
