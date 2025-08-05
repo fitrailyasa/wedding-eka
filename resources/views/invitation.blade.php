@@ -1,7 +1,7 @@
 <section class="section-container" style="background-color: var(--secondary-color)" id="invitation">
     <div class="container">
         <h3 class="mb-3 font-wedding animate-text" id="typed-title">
-            Countdown To<br />Our History
+            Countdown to<br />Our History
         </h3>
 
         <!-- Countdown -->
@@ -25,15 +25,14 @@
         </div>
 
         <div class="my-4 animate-text delay-2">
-            <img src="{{ asset('assets/photo (3).JPG') }}" alt="Couple Holding Hands"
-                class="img-fluid rounded shadow" style="max-width: 100%; height: auto" />
+            <img src="{{ asset('assets/photo (3).JPG') }}" alt="Couple Holding Hands" class="img-fluid rounded shadow"
+                style="max-width: 100%; height: auto" />
         </div>
 
         <blockquote class="fs-6 fst-italic mx-auto animate-text delay-3" style="max-width: 700px">
-            "Dan di antara ayat-ayat-Nya ialah Dia menciptakan untukmu istri-istri
-            dari jenismu sendiri, supaya kamu merasa nyaman kepadanya, dan
-            dijadikan-Nya di antaramu mawadah dan rahmah. Sesungguhnya pada yang
-            demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berpikir"
+            "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu isteri-isteri dari jenismu sendiri,
+            supaya kamu cenderung dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa kasih dan sayang.
+            Sesungguhnya pada yang demikian itu benar-benar terdapat tanda-tanda bagi kaum yang berfikir."
         </blockquote>
         <p class="mt-3 animate-text delay-4">Q.S. Ar-Rum: 21</p>
     </div>

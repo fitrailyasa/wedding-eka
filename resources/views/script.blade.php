@@ -66,7 +66,7 @@
 
     // Typing Effect
     function initTypingEffect() {
-        const text = "Countdown To\nOur History";
+        const text = "Countdown to\nOur History";
         const target = document.getElementById("typed-title");
         let i = 0;
 
