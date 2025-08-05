@@ -6,7 +6,7 @@
         <h1 class="font-wedding display-3 animate-text delay-2" style="font-size: 60px">
             Eka<br />&<br />Wildan
         </h1>
-        <div style="margin-top: 30px">
+        <div style="margin-top: 20px">
             <a href="#bannerCarousel" id="open-btn"
                 class="btn btn-light rounded-pill px-4 py-2 animate__animated animate__pulse animate__infinite">
                 Open Invitation
