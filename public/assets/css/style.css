@@ -1,0 +1,11 @@
+@font-face {
+    font-family: "Lovelace";
+    src: url("/assets/font/Lovelace-Regular.otf")
+        format("opentype");
+}
+
+@font-face {
+    font-family: "Lovelace-Bold";
+    src: url("/assets/font/Lovelace-Bold.otf")
+        format("opentype");
+}

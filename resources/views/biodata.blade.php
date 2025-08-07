@@ -51,12 +51,6 @@
     <!-- Foto Calon Mempelai Wanita -->
     <div class="biodata-container">
         <img src="{{ asset('') }}assets/eka-2.jpg" alt="Calon Mempelai Wanita" />
-        <div class="biodata-title">
-            <h2 class="section-title animate-text">Eka Anggraini, S.Tr.Kes</h2>
-        </div>
-        <div class="biodata-caption" align="left">
-            Putri pertama dari <br>Bapak Yusmin, S.H <br> bin Sutrimo &amp; <br> Ibu Eva Gustina, S.H <br> binti Iskandar Idrus
-        </div>
     </div>
 
     <!-- Foto Calon Mempelai Pria -->
