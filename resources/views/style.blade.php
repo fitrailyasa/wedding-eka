@@ -133,6 +133,18 @@
         z-index: -1;
     }
 
+    .video-wrapper video::-webkit-media-controls {
+        display: none !important;
+    }
+
+    .video-wrapper video {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        /* Ini mencegah user interaksi langsung dengan video */
+    }
+
     .section-container {
         position: relative;
         padding: var(--section-padding);
@@ -229,7 +241,7 @@
 
     .banner-text {
         font-family: 'Lovelace', serif;
-        font-size: 53px; 
+        font-size: 53px;
     }
 
     .carousel-caption {
