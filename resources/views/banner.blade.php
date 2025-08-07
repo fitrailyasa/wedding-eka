@@ -18,7 +18,8 @@
             <div class="carousel-item">
                 <img src="{{ asset('') }}assets/photo (2).JPG" class="d-block w-100 banner-img" alt="Banner 2" />
                 <div class="carousel-caption top-caption">
-                    <h2 class="text-shadow font-wedding">#WEddingparty</h2>
+                    <p class="text-shadow the-of-text">“Loved you yesterday, love you still,<br> always have, always will.” - Elaine Davis</p>
+                    <p class="text-shadow" style="font-family: 'Glacial Indifference', sans-serif;">#WEddingparty</p>
                 </div>
             </div>
         </div>
