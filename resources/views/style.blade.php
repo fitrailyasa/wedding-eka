@@ -228,6 +228,11 @@
         transition: transform 0.5s ease;
     }
 
+    .banner-text {
+        font-family: 'Lovelace', serif;
+        font-size: 60px; 
+    }
+
     .carousel-caption {
         position: absolute;
         left: 0;
