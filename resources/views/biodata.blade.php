@@ -50,7 +50,7 @@
 <section class="section-container p-0 mb-5 text-shadow" id="biodata">
     <!-- Foto Calon Mempelai Wanita -->
     <div class="biodata-container">
-        <img src="{{ asset('') }}assets/eka.JPG" alt="Calon Mempelai Wanita" />
+        <img src="{{ asset('') }}assets/eka-2.jpg" alt="Calon Mempelai Wanita" />
         <div class="biodata-title">
             <h2 class="section-title animate-text">Eka Anggraini, S.Tr.Kes</h2>
         </div>
