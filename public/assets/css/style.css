@@ -7,5 +7,11 @@
 @font-face {
     font-family: "Lovelace-Bold";
     src: url("/assets/font/Lovelace-Bold.otf")
+    format("opentype");
+}
+
+@font-face {
+    font-family: "Kulachat Serif";
+    src: url("/assets/font/KulachatSerif-Regular.otf")
         format("opentype");
 }
