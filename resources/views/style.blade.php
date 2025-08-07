@@ -55,6 +55,7 @@
     /* 4. Lambang & */
     .and-symbol {
         font-family: 'Playfair Display', serif;
+        font-size: 40px;
     }
 
     /* 5. Open Invitation Button */

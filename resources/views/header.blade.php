@@ -5,9 +5,9 @@
         </p>
 
         <h1 class="display-3 animate-text delay-2 px-4" style="font-size: 60px">
-            <p class="mb-0 names-text text-start">Eka</p>
+            <p class="mb-0 pb-0 names-text text-start">Eka</p>
             <p class="mb-0 and-symbol">&</p>
-            <p class="mt-3 mb-0 names-text text-end">Wildan</p>
+            <p class="mt-4 mb-0 names-text text-end">Wildan</p>
         </h1>
 
         <a href="#bannerCarousel" id="open-btn"
