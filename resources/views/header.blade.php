@@ -1,7 +1,7 @@
 <section class="section-container">
     <div class="container mt-3">
-        <p class="lead animate-text delay-1 the-of-text" style="padding-bottom: 20px">
-            The <span class="wedding-text">WEDDING</span> Of
+        <p class="lead animate-text delay-1 the-of-text d-flex align-items-center justify-content-center" style="padding-bottom: 20px">
+            The <span class="wedding-text px-2">WEDDING</span> Of
         </p>
 
         <h1 class="display-3 animate-text delay-2 px-4" style="font-size: 60px">

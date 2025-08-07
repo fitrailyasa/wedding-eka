@@ -38,11 +38,10 @@
 
     /* 2. W E D D I N G */
     .wedding-text {
-        font-family: 'Lovelace', serif;
-        font-weight: bold;
-        letter-spacing: 8px;
+        font-family: 'Lovelace-Bold', serif;
+        letter-spacing: 9px;
         font-style: normal;
-        font-size: 30px;
+        font-size: 32px;
     }
 
     /* 3. Eka + Wildan */

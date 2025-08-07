@@ -9,12 +9,12 @@
             <div class="carousel-item active">
                 <img src="{{ asset('') }}assets/photo (1).JPG" class="d-block w-100 banner-img" alt="Banner 1" />
                 <div class="carousel-caption top-caption">
-                    <p class="text-shadow" style="font-family: 'Lovelace', serif;">THANK YOU</p>
-                    <h1 class="banner-text text-shadow">FOR</h1>
-                    <h1 class="banner-text text-shadow">BEING</h1>
-                    <h1 class="banner-text text-shadow">A</h1>
-                    <h1 class="banner-text text-shadow">PART</h1>
-                    <h1 class="banner-text text-shadow">OF</h1>
+                    <p class="text-shadow m-0 p-0" style="font-family: 'Lovelace', serif;">THANK YOU</p>
+                    <p class="text-shadow m-0 p-0" style="font-family: 'Lovelace-Bold', serif; font-size: 44px;">FOR</p>
+                    <p class="text-shadow m-0 p-0" style="font-family: 'Lovelace-Bold', serif; font-size: 44px;">BEING</p>
+                    <p class="text-shadow m-0 p-0" style="font-family: 'Lovelace-Bold', serif; font-size: 44px;">A</p>
+                    <p class="text-shadow m-0 p-0" style="font-family: 'Lovelace-Bold', serif; font-size: 44px;">PART</p>
+                    <p class="text-shadow m-0 p-0" style="font-family: 'Lovelace-Bold', serif; font-size: 44px;">OF</p>
                     <p class="text-shadow" style="font-family: 'Lovelace', serif;">OUR HISTORY</p>
                 </div>
             </div>
