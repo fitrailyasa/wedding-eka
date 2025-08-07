@@ -7,10 +7,10 @@
 
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="{{ asset('') }}assets/banner-1-slide-2.JPG" class="d-block w-100 banner-img" alt="Banner 1" />
+                <img src="{{ asset('') }}assets/banner-1-slide-2.jpg" class="d-block w-100 banner-img" alt="Banner 1" />
             </div>
             <div class="carousel-item">
-                <img src="{{ asset('') }}assets/banner-2-slide-2.JPG" class="d-block w-100 banner-img" alt="Banner 2" />
+                <img src="{{ asset('') }}assets/banner-2-slide-2.jpg" class="d-block w-100 banner-img" alt="Banner 2" />
             </div>
         </div>
 
