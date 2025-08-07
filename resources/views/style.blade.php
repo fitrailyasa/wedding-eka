@@ -79,8 +79,7 @@
 
     /* 7. Nama tamu (ex: vivin agustina) */
     .guest-name-text {
-        font-family: 'Lovelace', serif;
-        font-weight: bold;
+        font-family: 'Lovelace Bold', serif;
     }
 
     /* 8. "You're invited to our wedding" */
