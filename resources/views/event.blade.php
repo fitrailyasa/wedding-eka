@@ -17,7 +17,7 @@
                 Kediaman mempelai wanita<br />Jln. Let. H Nur no. 122 LK. VI,
                 Simpang PLN, Kec. Sekayu
             </p>
-            <a href="https://maps.app.goo.gl/k6rQ7iwmXqKBtuFk8?g_st=ipc" target="_blank"
+            <a href="https://maps.app.goo.gl/k6rQ7iwmXqKBtuFk8?g_st=ipc" target="_blank" id="open-btn"
                 class="btn btn-light rounded-pill px-4 py-2 animate__animated animate__pulse animate__infinite">Lokasi
                 Acara</a>
         </div>
@@ -30,7 +30,7 @@
             <p class="mb-3">
                 Gedung Dharma Wanita Jl. Merdeka LK. I Kel. Balai Agung Kec. Sekayu
             </p>
-            <a href="https://maps.app.goo.gl/Hm8Tgvtvo92ZcyY6A?g_st=aw" target="_blank"
+            <a href="https://maps.app.goo.gl/Hm8Tgvtvo92ZcyY6A?g_st=aw" target="_blank" id="open-btn"
                 class="btn btn-light rounded-pill px-4 py-2 animate__animated animate__pulse animate__infinite">Lokasi
                 Acara</a>
         </div>

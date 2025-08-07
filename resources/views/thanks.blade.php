@@ -13,9 +13,9 @@
         </p>
         <p style="margin-top: 350px;">The Wedding Of</p>
         <h4 class="fw-bold animate-text delay-6">
-            Eka & Wildan<br>
+            Eka & Wildan
         </h4>
-        <p>VII.IX.MMXXV </p>
+        <p>VII.IX.MMXXV</p>
         <div class="mt-4">
             <i class="fas fa-heart text-danger fs-3 animate__animated animate__pulse animate__infinite"></i>
         </div>

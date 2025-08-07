@@ -28,6 +28,69 @@
         margin-bottom: 30px;
     }
 
+    /* 1. THE dan OF */
+    .the-of-text {
+        font-family: 'Glacial Indifference', sans-serif;
+        font-style: italic;
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    /* 2. W E D D I N G */
+    .wedding-text {
+        font-family: 'Lovelace', serif;
+        font-weight: bold;
+        letter-spacing: 8px;
+        font-style: normal;
+        font-size: 30px;
+    }
+
+    /* 3. Eka + Wildan */
+    .names-text {
+        font-family: 'Pinyon Script', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+    }
+
+    /* 4. Lambang & */
+    .and-symbol {
+        font-family: 'Playfair Display', serif;
+    }
+
+    /* 5. Open Invitation Button */
+    #open-btn {
+        font-family: 'Kulachat Serif', serif;
+        font-weight: bold;
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+        transition: all 0.3s ease;
+    }
+
+    #open-btn:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* 6. "Dear" */
+    .dear-text {
+        font-family: 'Kulachat Serif', serif;
+        font-weight: normal;
+    }
+
+    /* 7. Nama tamu (ex: vivin agustina) */
+    .guest-name-text {
+        font-family: 'Lovelace', serif;
+        font-weight: bold;
+    }
+
+    /* 8. "You're invited to our wedding" */
+    .invite-text {
+        font-family: 'Kulachat Serif', serif;
+        font-weight: normal;
+        letter-spacing: 1.5px;
+    }
+
     /* Text Animation Classes */
     .animate-text {
         opacity: 0;
@@ -118,11 +181,11 @@
     }
 
     #open-btn {
-        background: white;
-        color: black;
-        border: none;
+        background: transparent;
+        color: white;
+        border: 2px solid white;
         padding: 12px 30px;
-        font-size: 18px;
+        font-size: 13px;
         border-radius: 30px;
         margin-top: 20px;
         transition: all 0.3s ease;
@@ -130,8 +193,8 @@
     }
 
     #open-btn:hover {
-        background: #ddd;
-        transform: translateY(-2px);
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
     }
 
     /* Typing Animation */
