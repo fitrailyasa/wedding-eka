@@ -230,7 +230,7 @@
 
     .banner-text {
         font-family: 'Lovelace', serif;
-        font-size: 60px; 
+        font-size: 53px; 
     }
 
     .carousel-caption {
