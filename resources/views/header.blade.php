@@ -12,7 +12,7 @@
 
         <a href="#bannerCarousel" id="open-btn"
             class="btn rounded-pill px-3 py-2 animate__animated animate__pulse animate__infinite">
-            OPEN INTIVATION
+            OPEN INVITATION
         </a>
 
         <div class="my-5 rounded py-3 animate-text delay-3">
