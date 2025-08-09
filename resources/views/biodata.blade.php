@@ -50,17 +50,11 @@
 <section class="section-container p-0 mb-5 text-shadow" id="biodata">
     <!-- Foto Calon Mempelai Wanita -->
     <div class="biodata-container">
-        <img src="{{ asset('') }}assets/eka-2.jpg" alt="Calon Mempelai Wanita" />
+        <img src="{{ asset('') }}assets/photo-eka.jpg" alt="Calon Mempelai Wanita" />
     </div>
 
     <!-- Foto Calon Mempelai Pria -->
     <div class="biodata-container">
-        <img src="{{ asset('') }}assets/wildan.JPG" alt="Calon Mempelai Pria" />
-        <div class="biodata-title">
-            <h2 class="section-title animate-text">Wildan Satria, S.T</h2>
-        </div>
-        <div class="biodata-caption" align="right">
-            Putra pertama dari <br>Bapak Rasudin (Alm) <br> bin Abdul Rahman &amp; <br> Ibu Nahari Isminova, S.Pd <br> binti M. Saleh Rabil
-        </div>
+        <img src="{{ asset('') }}assets/photo-wildan.jpg" alt="Calon Mempelai Pria" />
     </div>
 </section>
